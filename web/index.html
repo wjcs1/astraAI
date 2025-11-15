@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Astra | Research made reachable</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-bar">
+        <a class="logo" href="index.html">Astra</a>
+        <nav class="primary-nav">
+          <a href="#skills">Develop skills</a>
+          <a href="#search">Search faculty research</a>
+          <a href="#mailing">Join updates</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="top">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">Where research journeys begin</p>
+            <h1>Build skills, explore faculty work, and reach out confidently.</h1>
+            <p class="lead">
+              Astra guides students through every step of launching a research career—from tuning
+              resumes to discovering labs and composing thoughtful cold emails.
+            </p>
+            <div class="hero-actions">
+              <a class="btn primary" href="develop-skills.html">Develop Your Research Skills</a>
+              <a class="btn ghost" href="#search">Search Faculty Projects</a>
+            </div>
+          </div>
+          <form class="mailing-card" id="mailingForm" aria-label="Join the Astra mailing list">
+            <h2>Get Astra launch updates</h2>
+            <p>Be the first to try the new flows, templates, and matching tools.</p>
+            <div class="input-row">
+              <label class="sr-only" for="mailingEmail">Email address</label>
+              <input
+                id="mailingEmail"
+                name="email"
+                type="email"
+                placeholder="email@school.edu"
+                required
+              />
+              <button class="btn primary" type="submit">Join</button>
+            </div>
+            <small class="helper">We will confirm instantly—no backend required yet.</small>
+          </form>
+        </div>
+      </section>
+
+      <section class="section" id="skills">
+        <div class="container feature-row">
+          <div>
+            <p class="eyebrow">Develop your research skills</p>
+            <h2>Everything you need to polish your resume in one flow.</h2>
+            <p>
+              Draft new sections, upload your existing resume for analysis, receive a readiness
+              score, and learn what to improve next—before reaching out to professors.
+            </p>
+            <ul class="feature-list">
+              <li>Resume Builder Tool to craft competitive copy</li>
+              <li>Resume Upload Component that inspects structure and clarity</li>
+              <li>Resume Scoring Module that highlights strengths</li>
+              <li>Possible Inputs list covering skills, experiences, GPA, and keywords</li>
+            </ul>
+            <a class="btn primary" href="develop-skills.html">Launch the skill builder</a>
+          </div>
+          <div class="flow-card">
+            <div>
+              <span class="tag">Preview</span>
+              <h3>Three-step readiness check</h3>
+              <ol>
+                <li>Describe your recent project work.</li>
+                <li>Upload your resume PDF for instant parsing.</li>
+                <li>Receive a readiness score with learning targets.</li>
+              </ol>
+            </div>
+            <p class="muted">
+              All intelligence runs locally for now—future iterations will plug into secure storage
+              and advising dashboards.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section alt" id="search">
+        <div class="container">
+          <div class="section-head">
+            <div>
+              <p class="eyebrow">Search faculty research</p>
+              <h2>Find labs aligned with your interests.</h2>
+              <p>Choose a department to reveal current project cards and jump into the details.</p>
+            </div>
+            <div class="filter">
+              <label for="departmentSelect">Department</label>
+              <select id="departmentSelect" name="department" aria-label="Select a department">
+                <option value="">Select a department</option>
+              </select>
+            </div>
+          </div>
+          <div class="project-grid" id="projectGrid" aria-live="polite"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer" id="mailing">
+      <div class="container footer-grid">
+        <div>
+          <p class="logo">Astra</p>
+          <p>Research enablement for every campus.</p>
+        </div>
+        <div>
+          <p class="muted">Contact</p>
+          <a href="mailto:hello@astra.edu">hello@astra.edu</a>
+        </div>
+      </div>
+    </footer>
+
+    <div class="toast" id="mailingToast" role="status" aria-live="polite"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

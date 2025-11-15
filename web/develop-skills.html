@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Develop Research Skills | Astra</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-bar">
+        <a class="logo" href="index.html">Astra</a>
+        <a class="btn ghost" href="index.html">← Back to homepage</a>
+      </div>
+    </header>
+
+    <main class="page">
+      <section class="page-hero">
+        <div class="container narrow">
+          <p class="eyebrow">Develop Your Research Skills</p>
+          <h1>Prototype the entire resume readiness flow.</h1>
+          <p class="lead">
+            Use the builder to outline accomplishments, upload your resume for instant parsing,
+            score your readiness, and review which inputs boost your credibility with professors.
+          </p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container skills-grid">
+          <article class="tool-card">
+            <h2>Resume Builder Tool</h2>
+            <p>Draft new resume sections with structured prompts.</p>
+            <form id="resumeBuilderForm">
+              <label for="builderFocus">Focus area</label>
+              <select id="builderFocus" name="focus">
+                <option value="lab experience">Lab experience</option>
+                <option value="course project">Course project</option>
+                <option value="industry internship">Industry internship</option>
+              </select>
+              <label for="builderHighlights">Highlights</label>
+              <textarea
+                id="builderHighlights"
+                name="highlights"
+                rows="4"
+                placeholder="List metrics, tools, or techniques you used"
+              ></textarea>
+              <button class="btn primary" type="submit">Generate outline</button>
+            </form>
+            <div class="output" id="builderOutput" aria-live="polite"></div>
+          </article>
+
+          <article class="tool-card">
+            <h2>Resume Upload Component</h2>
+            <p>Test the upload interface with mock parsing.</p>
+            <form id="resumeUploadForm">
+              <label for="resumeFile" class="file-drop">
+                <input id="resumeFile" name="resume" type="file" accept="application/pdf" />
+                <span>Drop PDF resume here or click to upload</span>
+              </label>
+              <button class="btn ghost" type="submit">Simulate upload</button>
+            </form>
+            <div class="output" id="uploadStatus" aria-live="polite"></div>
+          </article>
+
+          <article class="tool-card">
+            <h2>Resume Scoring Module</h2>
+            <p>Preview how Astra highlights strengths.</p>
+            <form id="resumeScoreForm">
+              <label for="targetRole">Target research area</label>
+              <input id="targetRole" name="target" type="text" placeholder="e.g., Human-AI" />
+              <button class="btn primary" type="submit">Score my resume</button>
+            </form>
+            <div class="output" id="scoreOutput" aria-live="polite"></div>
+          </article>
+
+          <article class="tool-card">
+            <h2>Skill Gap Analyzer</h2>
+            <p>Paste part of your resume for placeholder feedback on learning targets.</p>
+            <form id="resumeAnalysisForm">
+              <label for="resumeText">Resume snippet</label>
+              <textarea
+                id="resumeText"
+                name="resumeText"
+                rows="5"
+                placeholder="Paste bullet points or coursework here"
+              ></textarea>
+              <button class="btn ghost" type="submit">Analyze skill gaps</button>
+            </form>
+            <div class="output" id="analysisOutput" aria-live="polite"></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section alt">
+        <div class="container narrow">
+          <h2>Possible inputs</h2>
+          <p>Collect these details to help Astra personalize learning paths and emails:</p>
+          <div class="chip-grid">
+            <span class="chip">Python / MATLAB</span>
+            <span class="chip">Wet lab techniques</span>
+            <span class="chip">Robotics projects</span>
+            <span class="chip">GPA</span>
+            <span class="chip">Course keywords</span>
+            <span class="chip">Public speaking</span>
+            <span class="chip">Internships</span>
+            <span class="chip">Conference experience</span>
+            <span class="chip">Volunteer teaching</span>
+            <span class="chip">Languages</span>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <p class="logo">Astra</p>
+        <a href="index.html">Return home</a>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

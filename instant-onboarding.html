@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Astra — Instant Research Onboarding</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-content">
+        <a class="logo" href="index.html">Astra</a>
+        <nav class="nav" id="primaryNav" aria-label="Secondary navigation">
+          <a href="index.html">Home</a>
+          <a href="index.html#features">Features</a>
+          <a href="#top">This feature</a>
+        </nav>
+        <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-controls="primaryNav" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <button class="theme-toggle" id="themeToggle" type="button" aria-pressed="false">
+          <span class="icon" aria-hidden="true">🌙</span>
+          <span class="label">Dark</span>
+        </button>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero feature-detail">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">Key Feature</p>
+            <h1>Instant research onboarding</h1>
+            <p class="lead">
+              Receive tailored briefs that help you understand any professor, lab, or research area in
+              minutes—no background knowledge required.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container split">
+          <div>
+            <h2 class="section-title">Briefing layers</h2>
+            <ul class="persona-grid">
+              <li>Beginner overview with plain-language explanations</li>
+              <li>Advanced view covering methodologies, datasets, and tools</li>
+              <li>Action checklist to get involved within the next two weeks</li>
+            </ul>
+          </div>
+          <div class="media-card" role="img" aria-label="Sample onboarding brief">
+            <div class="media-card__body">
+              <h3>Included in every brief</h3>
+              <ul class="insight-list">
+                <li>
+                  <span class="pill">Vocabulary</span>
+                  <div>
+                    <strong>Key terminology</strong>
+                    <p>Know the language of the lab before you send your first email.</p>
+                  </div>
+                </li>
+                <li>
+                  <span class="pill">Methods</span>
+                  <div>
+                    <strong>Approach summaries</strong>
+                    <p>Understand the core techniques and why they matter for the research.</p>
+                  </div>
+                </li>
+                <li>
+                  <span class="pill">Next step</span>
+                  <div>
+                    <strong>Recommended actions</strong>
+                    <p>Suggested readings, tutorials, and questions to ask when you reach out.</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section alt">
+        <div class="container">
+          <h2 class="section-title">Student inputs</h2>
+          <p>
+            Tell Astra about your current studies, interests, and availability. We use that context to set
+            the appropriate tone and highlight ways you can contribute immediately.
+          </p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <a class="btn ghost" href="index.html#features">Back to Key Features</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <a class="logo" href="index.html">Astra</a>
+          <p class="footnote">Where research begins and curiosity thrives.</p>
+        </div>
+        <div>
+          <h3>Explore</h3>
+          <ul>
+            <li><a href="index.html#features">Features</a></li>
+            <li><a href="index.html#personas">Students & faculty</a></li>
+            <li><a href="index.html#cta">Get started</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Connect</h3>
+          <ul>
+            <li><a href="mailto:hello@astra.app">hello@astra.app</a></li>
+            <li><a href="https://www.linkedin.com" rel="noopener">LinkedIn</a></li>
+            <li><a href="https://twitter.com" rel="noopener">X (Twitter)</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="footer-bottom">© <span id="year"></span> Astra. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

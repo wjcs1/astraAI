@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Astra — Research Skill Development</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-content">
+        <a class="logo" href="index.html">Astra</a>
+        <nav class="nav" id="primaryNav" aria-label="Secondary navigation">
+          <a href="index.html">Home</a>
+          <a href="index.html#features">Features</a>
+          <a href="#top">This feature</a>
+        </nav>
+        <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-controls="primaryNav" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <button class="theme-toggle" id="themeToggle" type="button" aria-pressed="false">
+          <span class="icon" aria-hidden="true">🌙</span>
+          <span class="label">Dark</span>
+        </button>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero feature-detail">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">Key Feature</p>
+            <h1>Research skill development</h1>
+            <p class="lead">
+              Turn curiosity into capability with guided learning paths, practice projects, and resume-aware
+              feedback that highlights exactly what to learn next.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container split">
+          <div>
+            <h2 class="section-title">Learning paths</h2>
+            <p>
+              Astra curates a progressive series of papers, tutorials, datasets, and project prompts so you
+              can build the skills a lab expects. Each pathway adapts based on the time you have available
+              and the prerequisites you already know.
+            </p>
+            <p>
+              With resume analysis, we highlight core competencies, identify gaps, and suggest learning
+              targets to close them.
+            </p>
+          </div>
+          <div class="media-card" role="form" aria-label="Resume insight request">
+            <div class="media-card__body">
+              <h3>Upload your resume</h3>
+              <form class="resume-form">
+                <label for="resume" class="sr-only">Resume</label>
+                <input id="resume" type="file" accept=".pdf,.doc,.docx" />
+                <label for="interests" class="sr-only">Interests</label>
+                <input id="interests" type="text" placeholder="Target field (e.g. robotics)" />
+                <button class="btn primary" type="submit">Analyze skill gaps</button>
+                <p class="form-footnote">
+                  Astra reviews your experiences and recommends skills, tools, and resources tailored to your
+                  goals.
+                </p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section alt">
+        <div class="container">
+          <h2 class="section-title">What you receive</h2>
+          <ul class="persona-grid">
+            <li>Personalized learning milestones with due dates</li>
+            <li>Recommended datasets and sandbox projects</li>
+            <li>Skill-gap report mapped to lab expectations</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <a class="btn ghost" href="index.html#features">Back to Key Features</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <a class="logo" href="index.html">Astra</a>
+          <p class="footnote">Where research begins and curiosity thrives.</p>
+        </div>
+        <div>
+          <h3>Explore</h3>
+          <ul>
+            <li><a href="index.html#features">Features</a></li>
+            <li><a href="index.html#personas">Students & faculty</a></li>
+            <li><a href="index.html#cta">Get started</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Connect</h3>
+          <ul>
+            <li><a href="mailto:hello@astra.app">hello@astra.app</a></li>
+            <li><a href="https://www.linkedin.com" rel="noopener">LinkedIn</a></li>
+            <li><a href="https://twitter.com" rel="noopener">X (Twitter)</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="footer-bottom">© <span id="year"></span> Astra. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

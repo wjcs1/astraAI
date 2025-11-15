@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Astra — Where Research Begins</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-content">
+        <a class="logo" href="#">Astra</a>
+        <nav class="nav" id="primaryNav" aria-label="Main navigation">
+          <a href="#features">Features</a>
+          <a href="#how-it-works">How it works</a>
+          <a href="#personas">For students & faculty</a>
+          <a href="#cta">Get started</a>
+        </nav>
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-label="Toggle navigation"
+          aria-controls="primaryNav"
+          aria-expanded="false"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <button class="theme-toggle" id="themeToggle" type="button" aria-pressed="false">
+          <span class="icon" aria-hidden="true">🌙</span>
+          <span class="label">Dark</span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="top">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">Astra — Where Research Begins</p>
+            <h1>Turn curiosity into contribution.</h1>
+            <p class="lead">
+              Astra accelerates the journey from curious student to confident researcher with
+              AI-powered discovery, onboarding, and outreach.
+            </p>
+            <div class="hero-actions">
+              <a class="btn primary" href="#cta">Request early access</a>
+              <a class="btn ghost" href="#features">Explore features</a>
+            </div>
+            <dl class="value-props">
+              <div>
+                <dt>5-minute briefs</dt>
+                <dd>Instantly understand any lab, professor, or paper.</dd>
+              </div>
+              <div>
+                <dt>Tailored outreach</dt>
+                <dd>Send polished, relevant cold emails with confidence.</dd>
+              </div>
+              <div>
+                <dt>Trend intelligence</dt>
+                <dd>Spot emerging fields and collaboration opportunities.</dd>
+              </div>
+            </dl>
+          </div>
+          <aside class="hero-card" aria-label="Live onboarding preview">
+            <h2>Research Onboarding Snapshot</h2>
+            <div class="card-body">
+              <p class="card-title">Professor Elena Park — Human-Robot Collaboration Lab</p>
+              <ul>
+                <li><strong>Methods:</strong> Bayesian modeling, real-time teleoperation</li>
+                <li><strong>Datasets:</strong> ROSbag motion capture, ETH Zurich HRC set</li>
+                <li><strong>Focus:</strong> Trust calibration, industrial cobot safety</li>
+              </ul>
+              <p class="card-footer">
+                Recommended next step: Review "Adaptive Shared Autonomy" (Park et al., ICRA 2023)
+              </p>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section" id="features">
+        <div class="container">
+          <h2 class="section-title">What Astra unlocks</h2>
+          <div class="feature-grid">
+            <article class="feature">
+              <h3>Research mapping & discovery</h3>
+              <p>
+                Aggregate publications, grants, patents, and lab websites into an adaptive
+                knowledge graph that reveals the most influential work, open problems, and
+                cross-disciplinary connections.
+              </p>
+            </article>
+            <article class="feature">
+              <h3>Instant research onboarding</h3>
+              <p>
+                Generate dual-layer briefs—beginner and advanced—that capture terminology,
+                methodologies, tooling, and prerequisite knowledge tailored to the student’s
+                background.
+              </p>
+            </article>
+            <article class="feature">
+              <h3>Competent, customized outreach</h3>
+              <p>
+                Draft personalized emails and research-readiness profiles that align student
+                interests and skills with the specific trajectory of a professor’s lab.
+              </p>
+            </article>
+            <article class="feature">
+              <h3>Trend analysis & insight generation</h3>
+              <p>
+                Visualize emerging topics, declining interest areas, and collaboration networks to
+                identify where to focus or pivot research energy.
+              </p>
+            </article>
+            <article class="feature">
+              <h3>Research skill development</h3>
+              <p>
+                Deliver curated learning paths linking seminal papers, tutorials, datasets, and
+                starter projects so students ramp up faster.
+              </p>
+            </article>
+            <article class="feature">
+              <h3>Faculty intelligence</h3>
+              <p>
+                Surface comparable labs, potential collaborators, and grant opportunities, all while
+                automating literature digests for busy professors.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section alt" id="how-it-works">
+        <div class="container split">
+          <div>
+            <h2 class="section-title">How Astra works</h2>
+            <ol class="steps">
+              <li>
+                <h3>Tell us where you want to go</h3>
+                <p>
+                  Share your interests, existing coursework, and the labs or industries you’re
+                  targeting. Astra builds a context profile in seconds.
+                </p>
+              </li>
+              <li>
+                <h3>We assemble the research landscape</h3>
+                <p>
+                  Our AI engine scrapes, clusters, and summarizes the latest work, presenting a
+                  navigable map of concepts, questions, and experts.
+                </p>
+              </li>
+              <li>
+                <h3>You act with clarity</h3>
+                <p>
+                  Receive onboarding briefs, outreach kits, and personalized learning paths—ready to
+                  send, study, or share.
+                </p>
+              </li>
+            </ol>
+          </div>
+          <div class="media-card" role="img" aria-label="Astra interface mockup">
+            <div class="media-card__header">
+              <span class="badge">Live Demo</span>
+              <span class="status">Generating insights...</span>
+            </div>
+            <div class="media-card__body">
+              <h3>Emerging AI Ethics Research</h3>
+              <p class="timestamp">Updated 2 minutes ago</p>
+              <ul class="insight-list">
+                <li>
+                  <span class="pill">🔥 Rising</span>
+                  <div>
+                    <strong>Responsible synthetic data pipelines</strong>
+                    <p>Mentions up 160% YoY across NeurIPS, ICML, and AAAI submissions.</p>
+                  </div>
+                </li>
+                <li>
+                  <span class="pill">🧠 Skill</span>
+                  <div>
+                    <strong>Counterfactual evaluation</strong>
+                    <p>Add to your toolkit: DoWhy, EconML, and CausalNex walkthroughs.</p>
+                  </div>
+                </li>
+                <li>
+                  <span class="pill">🤝 Connect</span>
+                  <div>
+                    <strong>Prof. Mira Chen</strong>
+                    <p>Stanford AI Lab — leading projects on bias-aware model governance.</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="personas">
+        <div class="container personas">
+          <h2 class="section-title">Built for students and faculty alike</h2>
+          <div class="persona-grid">
+            <article class="persona">
+              <h3>For students</h3>
+              <ul>
+                <li>Clarify where to start in any research area with tailored learning paths.</li>
+                <li>Sound informed in every cold email using adaptive tone and evidence.</li>
+                <li>Track your progress with milestone checklists and saved briefs.</li>
+              </ul>
+            </article>
+            <article class="persona">
+              <h3>For faculty & labs</h3>
+              <ul>
+                <li>Receive concise digests of relevant publications and grant movements.</li>
+                <li>Discover cross-campus collaborators and complementary expertise.</li>
+                <li>Onboard new students faster with automatically generated ramp-up kits.</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section alt" id="metrics">
+        <div class="container metrics">
+          <div class="metric">
+            <span class="metric-value">4x</span>
+            <p>Faster onboarding time from interest to first research contribution.</p>
+          </div>
+          <div class="metric">
+            <span class="metric-value">92%</span>
+            <p>Students report feeling "confident" approaching faculty after using Astra.</p>
+          </div>
+          <div class="metric">
+            <span class="metric-value">30+</span>
+            <p>Research fields mapped with live trend analysis in the private beta.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="faq">
+        <div class="container faq">
+          <h2 class="section-title">Questions we hear often</h2>
+          <details>
+            <summary>Where does Astra gather research data?</summary>
+            <p>
+              Astra synthesizes information from public academic databases (Google Scholar, arXiv,
+              PubMed), grant repositories, lab and company research pages, and other open web
+              sources. Private data is only used when explicitly provided by the user or institution.
+            </p>
+          </details>
+          <details>
+            <summary>Can Astra adapt to my experience level?</summary>
+            <p>
+              Yes. During onboarding we ask about your background and confidence with research
+              methods. The briefings and learning plans adjust terminology, depth, and pacing to
+              match.
+            </p>
+          </details>
+          <details>
+            <summary>Is outreach messaging customizable?</summary>
+            <p>
+              You can tweak tone, attach your resume or portfolio, and flag specific projects you
+              want to reference. Astra suggests language grounded in the professor’s current work.
+            </p>
+          </details>
+          <details>
+            <summary>How does Astra stay up to date?</summary>
+            <p>
+              Automated refresh cycles keep briefs current by re-scraping new publications, grants,
+              and lab updates. You receive notifications when meaningful changes occur.
+            </p>
+          </details>
+        </div>
+      </section>
+
+      <section class="section cta" id="cta">
+        <div class="container cta-card">
+          <div>
+            <h2>Ready to make research accessible?</h2>
+            <p>
+              Join the private beta to experience how Astra can accelerate research onboarding for
+              your students, lab, or organization.
+            </p>
+          </div>
+          <form class="cta-form" aria-label="Request early access">
+            <div class="input-group">
+              <label class="sr-only" for="name">Name</label>
+              <input id="name" name="name" type="text" placeholder="Name" required />
+            </div>
+            <div class="input-group">
+              <label class="sr-only" for="email">Email</label>
+              <input id="email" name="email" type="email" placeholder="Email" required />
+            </div>
+            <div class="input-group">
+              <label class="sr-only" for="role">Role</label>
+              <select id="role" name="role">
+                <option value="student">Student</option>
+                <option value="faculty">Faculty</option>
+                <option value="administrator">Administrator</option>
+                <option value="industry">Industry Research</option>
+              </select>
+            </div>
+            <button class="btn primary" type="submit">Request access</button>
+            <p class="form-footnote">We’ll reach out within 48 hours.</p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <a class="logo" href="#top">Astra</a>
+          <p class="footnote">Where research begins and curiosity thrives.</p>
+        </div>
+        <div>
+          <h3>Explore</h3>
+          <ul>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#how-it-works">How it works</a></li>
+            <li><a href="#personas">Students & faculty</a></li>
+            <li><a href="#faq">FAQ</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Connect</h3>
+          <ul>
+            <li><a href="mailto:hello@astra.app">hello@astra.app</a></li>
+            <li><a href="https://www.linkedin.com" rel="noopener">LinkedIn</a></li>
+            <li><a href="https://twitter.com" rel="noopener">X (Twitter)</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="footer-bottom">© <span id="year"></span> Astra. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
